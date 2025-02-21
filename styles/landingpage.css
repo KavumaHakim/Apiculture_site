@@ -1,0 +1,172 @@
+/* * {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+body{
+    margin: 0;
+}
+nav + div {
+    justify-content: space-around;
+    text-decoration: none;
+    padding: auto;
+    margin:auto;
+    align-items: center;
+}
+
+.main_picture {
+    transform: scale(0.5,0.5);
+    position: absolute;
+}
+
+.first_one{
+    height: 100vh;
+    background-color: yellow;
+    background-repeat: none;
+    background-position:  cover;
+}
+
+#mainthing{
+align-items: center;
+}
+
+
+.aside{
+    transform: scaleY(4);
+    justify-content: center;
+    align-items:auto;
+    flex-direction: column;
+}
+button{
+    border-radius: 20px;
+    padding: 15px;
+    margin: 15px;
+    background-color: yellow;
+    border-width: 0px;
+
+}
+
+.content{
+    align-items: center;
+    justify-content: center;
+    margin: 200px 200px 200px 200px ;
+    padding:auto;
+}
+
+.mainbar{
+    text-decoration-line: none;
+    padding: auto;
+    justify-content: flex-end;
+    align-items: center;
+    justify-content: space-around;
+    justify-content: space-evenly;
+
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&family=DM+Serif+Display:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=DM+Serif+Display:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=DM+Serif+Display:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.first-view{
+    width:100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    grid-template-rows: 60px 1fr;
+    grid-template-areas: 
+        "side header"
+        "side section"
+        ;
+
+}
+
+header{
+    display: flex;
+    grid-area: header;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.links{
+    margin-top: 0;
+    display: flex;
+    justify-content: space-evenly;
+    width: 60%;
+}
+.links li{
+    display: inline;
+}
+.links li a{
+    text-decoration: none;
+    color: #FFB238;
+}
+nav{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 0;
+    padding: 10px;
+    width: 100%;
+}   
+.side-box{
+    grid-area: side;
+    background-color: #FFB238;
+    height: 100vh;
+}
+.logo{
+    display:flex;
+    align-items: flex-start;
+}
+
+.logo h2{
+    font-size: 20px;
+    margin: 0;
+    font-family: "ADLaM Display", serif;
+}
+main{
+    grid-area: main;
+}
+.bee{
+    position: relative;
+    left: 35px;
+    rotate: 10deg;
+}
+.headings{
+    display: flex;
+    flex-direction: column;
+    grid-area:section ;
+}
+.headings h1{
+    font-size: 5rem;
+    text-align: center;
+    font-family: 'DM Serif Display';
+    font-weight: 100;
+    margin-bottom: 0;
+}
+.headings p{
+    text-align: center;
+    align-items: center;
+    margin: 0;
+    font-family: Poppins;
+}
+
+.headings h1 + p{
+    font-family: "Averia Serif Libre";
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.headings a{
+    text-decoration: none;
+    background-color: #FFB238;
+    color: #fff;
+    padding: 10px;
+    width: 100px;
+    border-radius: 20px;
+    align-self: center;
+    text-align: center;
+    margin-top: 20px;
+}
